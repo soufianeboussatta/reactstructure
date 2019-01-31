@@ -1,0 +1,59 @@
+// @Package : TMTGulp
+// Mixins, here's where we're adding our magical helpers
+
+
+@mixin placeholder-color( $color : $black ){
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder { 
+    color: $color;
+  }
+}
+
+@mixin font-icon($valign : middle, $block : false, $content : ''){
+    font-family: $fontIconName;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+
+	@if $block == false {
+		display: inline-block;
+	}
+	
+	@if $block == true {
+		display: block;
+	}
+
+	@if $content != '' {
+		content: $content;
+	}
+
+}
+
+
+@mixin clearfix(){
+	&:before,
+	&:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	&:after {
+	    clear: both;
+	}
+
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+	.ie &{
+	    *zoom: 1;
+	}
+}
+

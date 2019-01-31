@@ -1,0 +1,62 @@
+// @Package : TMTGulp
+// Globals, the name says it all
+
+body{
+	background: #F4F4F4;
+	font-size: 16px;
+	line-height: normal;
+	position: relative;
+	color: $black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+
+	&.lock-body{
+		overflow: hidden;
+	}
+}
+
+*{
+	// transition: all .2s linear;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	&:hover, &:focus{
+		text-decoration: underline;
+	}
+
+	img{
+		display: block;
+	}	
+}
+
+img{
+	max-width: 100%;
+}
+
+img[height]{
+	height: auto;
+}
+
+::-moz-selection {
+	// background: $pistach;
+	// color: $white;
+}
+::selection {
+	// background: $pistach;
+	// color: $white;
+}
+
+.hidden{
+	display: none;
+}
+
+.container{
+	width: 1075px;
+	max-width: 100%;
+	margin: 0 auto;
+	@include clearfix;
+}
+

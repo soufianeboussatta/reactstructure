@@ -1,0 +1,53 @@
+// @Package : TMTGulp
+// Buttons
+
+.btn{
+	background: $green;
+	position: relative;
+	font-family: $ptsans;
+	font-size: 14px;
+	font-weight: 700;	
+	vertical-align: middle;
+	min-width: 150px;
+	height: 40px;
+	color: $white;
+	cursor: pointer;
+	overflow: hidden;
+	text-align: center;
+	border: none;
+	user-select: none;
+	box-shadow: none;	
+
+	&:hover, &:focus{
+		background-color: $greenlight;
+	}
+
+	&[disabled]{
+		background: #aeafb2!important;
+		border: none!important;
+	}
+}
+
+.btn-transparent{
+	border: 1px solid $gray;
+}
+
+.btn-blue{
+	background-color: $blue;
+	&:hover,&:focus{
+		background-color: $bluedark;
+	}
+}
+
+.see-more{
+	font-size: 14px;
+	color: $blue;
+	font-weight: 400;
+	margin-top: 15px;
+	display: inline-block;
+	cursor: pointer;
+
+	&[disabled]{
+		display:none;
+	}
+}

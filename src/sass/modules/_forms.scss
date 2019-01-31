@@ -1,0 +1,42 @@
+// @Package : TMTGulp
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"], textarea {
+	background-color: #F2F2F2;
+	outline: none; 
+	color: $black;
+	width: 100%;
+	margin: 0;
+	padding: 8px;
+	min-height: 35px;
+	font-size: 14px;
+	border: 1px solid #A9A9A9;
+	@include placeholder-color(#B3B3B3);
+	.ie8 &{
+		min-height: 55px;
+	}
+}
+
+textarea{
+	min-height: 210px;
+	resize: none;
+	padding-left: 24px;
+	padding-right: 24px;
+	font-weight: 300;
+	@include placeholder-color(#999);
+	.ie &{
+		height: 188px;
+	}
+}
